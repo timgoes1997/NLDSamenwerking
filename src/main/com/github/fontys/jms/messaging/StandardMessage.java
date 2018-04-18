@@ -8,6 +8,10 @@ public class StandardMessage<OBJECT> {
         this.object = object;
     }
 
+    public OBJECT getObject() {
+        return object;
+    }
+
     @Override
     public String toString() {
         return object.toString();

@@ -10,6 +10,7 @@ import com.github.fontys.jms.reply.VehicleReply;
 import com.github.fontys.jms.request.VehicleRequest;
 
 import javax.annotation.PostConstruct;
+import javax.ejb.Startup;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.jms.JMSException;
@@ -20,6 +21,7 @@ import javax.ws.rs.core.Response;
 import java.awt.*;
 
 @Path("/dutch")
+@Startup
 @Stateless
 public class DutchBean {
 
