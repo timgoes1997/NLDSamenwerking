@@ -10,15 +10,15 @@ public class VehicleObject {
     private int vat;
     private String license;
     private String country;
-    //private List<VehicleObjectRate> rates;
+    private List<VehicleObjectRate> rates;
 
-    public VehicleObject(int distance, int price, int vat, String license, String country /*,List<VehicleObjectRate> rates*/){
+    public VehicleObject(int distance, int price, int vat, String license, String country ,List<VehicleObjectRate> rates){
         this.distance = distance;
         this.price = price;
         this.vat = vat;
         this.license = license;
         this.country = country;
-        //this.rates = rates;
+        this.rates = rates;
     }
 
     public int getDistance() {
@@ -60,7 +60,7 @@ public class VehicleObject {
     public void setCountry(String country) {
         this.country = country;
     }
-/*
+
     public List<VehicleObjectRate> getRates() {
         return rates;
     }
@@ -68,7 +68,7 @@ public class VehicleObject {
     public void setRates(List<VehicleObjectRate> rates) {
         this.rates = rates;
     }
-*/
+
     @Override
     public String toString() {
         return "VehicleObject{" +
@@ -77,7 +77,7 @@ public class VehicleObject {
                 ", vat=" + vat +
                 ", license='" + license + '\'' +
                 ", country='" + country + '\'' +
-                //", rates=" + rates +
+                ", rates=" + rates +
                 '}';
     }
 }
