@@ -25,7 +25,7 @@ public class ObjectSerializer<OBJECT> {
     }
 
     public StandardMessage standardMessageFromString(String str){
-        return gson.fromJson(str, TypeToken.getParameterized(RequestReply.class, objectClass).getType());
+        return gson.fromJson(str, TypeToken.getParameterized(StandardMessage.class, objectClass).getType());
     }
 
     public String standardMessageToString(StandardMessage standardMessage){

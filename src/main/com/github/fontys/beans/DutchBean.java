@@ -38,7 +38,7 @@ public class DutchBean {
                 public void receivedAction(StandardMessage standardMessage) throws JMSException {
                     germanBean.getGermanGateway().send(standardMessage);
                 }
-            }, Constant.DUTCH_SENDERCHANNEL, Constant.DUTCH_RECEIVERCHANNEL, Constant.PROVIDER, VehicleObject.class);
+            }, Constant.DUTCH_RECEIVERCHANNEL, Constant.DUTCH_SENDERCHANNEL, Constant.PROVIDER, VehicleObject.class);
         } catch (JMSException | NamingException e) {
             e.printStackTrace();
         }
