@@ -68,4 +68,16 @@ public class VehicleObject {
     public void setRates(List<VehicleObjectRate> rates) {
         this.rates = rates;
     }
+
+    @Override
+    public String toString() {
+        return "VehicleObject{" +
+                "distance=" + distance +
+                ", price=" + price +
+                ", vat=" + vat +
+                ", license='" + license + '\'' +
+                ", country='" + country + '\'' +
+                ", rates=" + rates +
+                '}';
+    }
 }

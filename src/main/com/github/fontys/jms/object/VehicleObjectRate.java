@@ -34,4 +34,13 @@ public class VehicleObjectRate {
     public void setDistance(int distance) {
         this.distance = distance;
     }
+
+    @Override
+    public String toString() {
+        return "VehicleObjectRate{" +
+                "timestamp=" + timestamp +
+                ", rate=" + rate +
+                ", distance=" + distance +
+                '}';
+    }
 }
