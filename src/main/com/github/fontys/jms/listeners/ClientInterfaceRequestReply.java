@@ -4,6 +4,6 @@ import com.github.fontys.jms.messaging.RequestReply;
 
 import javax.jms.JMSException;
 
-public interface ClientInterface {
+public interface ClientInterfaceRequestReply {
     void receivedAction(RequestReply requestReply) throws JMSException;
 }

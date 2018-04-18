@@ -1,4 +1,4 @@
-package com.github.fontys.jms.gateway;
+package com.github.fontys.jms.gateway.requestreply;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 

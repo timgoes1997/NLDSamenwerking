@@ -5,13 +5,13 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
-public class Serializer<REQUEST, REPLY> {
+public class RequestReplySerializer<REQUEST, REPLY> {
     private Gson gson; //gebruikte eerst genson maar die heeft slechte ondersteuning voor generics zoals RequestReply, terwijl gson dit met gemak ondersteund
 
     private final Class<REQUEST> requestClass;
     private final Class<REPLY> replyClass;
 
-    public Serializer(Class<REQUEST> requestClass, Class<REPLY> replyClass){
+    public RequestReplySerializer(Class<REQUEST> requestClass, Class<REPLY> replyClass){
         this.requestClass = requestClass;
         this.replyClass = replyClass;
         gson = new GsonBuilder().create();
